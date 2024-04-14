@@ -1,59 +1,189 @@
-/*-------------------TO-DO LIST-------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 body {
-  display: flex;
-  align-items: center;
-  background-color: #edf2fb;
-  height: 100vh;
-  min-width: 800px;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*-------------------TO-DO LIST-------------------*/
+body {
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+    background: url(assets/ipad_pens.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 button > i {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 .todo-list-area {
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  background: url(assets/angele-kamp-ZDAk_IQe7jA-unsplash.jpg) no-repeat;
-  background-size: cover;
+    position: relative;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    text-align: center;
 }
-
 .todo-list-area .todo-intro {
-  position: absolute;
-  top: 53%;
-  left: 47%;
-  width: 70%;
-  transform: translate(-50%, -60%);
-  font-size: 32px;
-  text-align: center;
-  line-height: 50px;
+  position: relative;
+  margin-top: 15%;
+  font-size: 3vw;
+  line-height: 1.5vw;
   color: #000;
-  opacity: 0.2;
+  opacity: 0.1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .todo-list-area .todo-intro span {
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.5vw;
 }
-
 .todo-list-area .todos {
   position: relative;
-  overflow: auto;
-  top: 220px;
-  left: 300px;
-  height: 250px;
-  width: 570px;
-}
+  height: 385px;
+  width: 450px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .todo-list-area .todos .item {
   display: flex;
-  justify-content: space-between;
+
   padding: 5px 0;
-  border-bottom: 1px solid #f2f2f2;
-  background-color: #d5d8d9;
+  border-bottom: 1px solid #dedede;
+  background-color: #fff;
 }
 
 .todo-list-area .content {
@@ -61,67 +191,62 @@ button > i {
   padding-left: 20px;
   width: 430px;
   height: 42px;
-  line-height: 42px;
+  line-height: 42px;  
 }
+
 .todo-list-area .content > label {
-  position: absolute;
-  top: 0px;
-  left: 20px;
-  font-size: 16px;
-  width: 100%;
+  position: relative;
   font-weight: bold;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  text-align: left;
 }
-
 .todo-list-area .item input[type='text'] {
-  position: absolute;
-  top: 60px;
-  left: 50px;
+  position: relative;
+  /* top: 10px;
+  left: 20px; */
   display: none;
   border: 0 none;
   outline: none;
-  font-size: 16px;
+  font-size: 13px;
   letter-spacing: -1.2px;
-  width: 50%;
+  width: 100%;
   font-weight: bold;
   color: #e50087;
 }
-
 .todo-list-area .item_buttons {
   width: auto;
 }
-
 .todo-list-area .item_buttons i {
   position: relative;
   top: 2px;
 }
-
 .todo-list-area .item_buttons > button {
   text-align: center;
-  width: 42px;
-  height: 42px;
-  color: #ed6538;
+  width: 35px;
+  height: 35px;
+  color: #daab00;
   font-size: 17px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
-
-
+.todo-list-area .item_buttons > button:first-child {
+  background-color: #fdf3ce;
+  margin-right: 8px;
+}
 .todo-list-area .edit_buttons {
   display: none;
 }
-
 .todo-list-area .todo_form {
   position: absolute;
   bottom: 40px;
-  right: 100px;
   display: flex;
   justify-content: space-between;
-  width: 590px;
+  max-width: 500px;
+  width: 80%;
+  min-width: 100px;
   margin-top: 12px;
 }
-
 .todo-list-area .todo_form .todo_input {
   width: 100%;
   font-size: 16px;
@@ -129,9 +254,8 @@ button > i {
   background-color: #f6f6f6;
   border-radius: 8px;
 }
-
 .todo-list-area .todo_form .todo_submit_button {
-  background-color: #000000;
+  background-color: #0066ff;
   color: #fff;
   width: 80px;
   margin-left: 10px;
