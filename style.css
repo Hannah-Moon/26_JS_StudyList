@@ -1,0 +1,144 @@
+/*-------------------TO-DO LIST-------------------*/
+
+body {
+  display: flex;
+  align-items: center;
+  background-color: #edf2fb;
+  height: 100vh;
+  min-width: 800px;
+}
+
+button > i {
+  pointer-events: none;
+}
+
+.todo-list-area {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background: url(assets/angele-kamp-ZDAk_IQe7jA-unsplash.jpg) no-repeat;
+  background-size: cover;
+}
+
+.todo-list-area .todo-intro {
+  position: absolute;
+  top: 53%;
+  left: 47%;
+  width: 70%;
+  transform: translate(-50%, -60%);
+  font-size: 32px;
+  text-align: center;
+  line-height: 50px;
+  color: #000;
+  opacity: 0.2;
+}
+
+.todo-list-area .todo-intro span {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.todo-list-area .todos {
+  position: relative;
+  overflow: auto;
+  top: 220px;
+  left: 300px;
+  height: 250px;
+  width: 570px;
+}
+
+.todo-list-area .todos .item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #f2f2f2;
+  background-color: #d5d8d9;
+}
+
+.todo-list-area .content {
+  position: relative;
+  padding-left: 20px;
+  width: 430px;
+  height: 42px;
+  line-height: 42px;
+}
+.todo-list-area .content > label {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  font-size: 16px;
+  width: 100%;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.todo-list-area .item input[type='text'] {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  display: none;
+  border: 0 none;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: -1.2px;
+  width: 50%;
+  font-weight: bold;
+  color: #e50087;
+}
+
+.todo-list-area .item_buttons {
+  width: auto;
+}
+
+.todo-list-area .item_buttons i {
+  position: relative;
+  top: 2px;
+}
+
+.todo-list-area .item_buttons > button {
+  text-align: center;
+  width: 42px;
+  height: 42px;
+  color: #ed6538;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+
+.todo-list-area .edit_buttons {
+  display: none;
+}
+
+.todo-list-area .todo_form {
+  position: absolute;
+  bottom: 40px;
+  right: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 590px;
+  margin-top: 12px;
+}
+
+.todo-list-area .todo_form .todo_input {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 14px;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+}
+
+.todo-list-area .todo_form .todo_submit_button {
+  background-color: #000000;
+  color: #fff;
+  width: 80px;
+  margin-left: 10px;
+  font-size: 30px;
+  border-radius: 8px;
+}
+.todo-list-area .todo_form .todo_submit_button i {
+  position: relative;
+  top: 3px;
+}
