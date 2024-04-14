@@ -1,135 +1,7 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 
 /*-------------------TO-DO LIST-------------------*/
 body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: 100%;
     width: auto;
     margin: 0 auto;
@@ -146,107 +18,126 @@ button > i {
 
 .todo-list-area {
     position: relative;
-    align-items: center;
+    /* align-items: center; */
     height: 100%;
     width: auto;
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .todo-list-area .todo-intro {
-  position: relative;
-  margin-top: 15%;
-  font-size: 3vw;
-  line-height: 1.5vw;
+  /* padding: 0 10px 0 0 10px;
+  font-size: 1.8vw;
   color: #000;
-  opacity: 0.1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  opacity: 0.1; */
+  margin-top: 12%;
 }
 
-.todo-list-area .todo-intro span {
-  display: inline-block;
-  font-size: 1.5vw;
-}
+/* .todo-list-area .todo-intro span {
+  font-size: 1.2vw;
+} */
+
 .todo-list-area .todos {
-  position: relative;
-  height: 385px;
-  width: 450px;
+  /* position: relative; */
+  /* margin-top: 20%; */
+
+  max-height: 700px;
+  height: 70%;
+  min-height: 300px;
+
+  max-width: 500px;
+  width: 70%;
+  min-width: 400px;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  /* align-items: center; */
   flex-direction: column;
 }
+
 .todo-list-area .todos .item {
   display: flex;
 
   padding: 5px 0;
+  margin-right: 30px;
   border-bottom: 1px solid #dedede;
   background-color: #fff;
 }
 
 .todo-list-area .content {
-  position: relative;
-  padding-left: 20px;
-  width: 430px;
+  /* position: relative; */
+
+  max-width: 1000px;
+  width: 90%;
+  min-width: 400px;
+
   height: 42px;
   line-height: 42px;  
+
+  display: flex;
+  justify-content: flex-start;
 }
 
 .todo-list-area .content > label {
-  position: relative;
-  font-weight: bold;
+  /* position: relative; */
+  /* font-weight: bold; */
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
 }
+
 .todo-list-area .item input[type='text'] {
-  position: relative;
-  /* top: 10px;
-  left: 20px; */
   display: none;
   border: 0 none;
   outline: none;
-  font-size: 13px;
-  letter-spacing: -1.2px;
+  font-size: 12px;
+  letter-spacing: 2px;
   width: 100%;
-  font-weight: bold;
-  color: #e50087;
+  /* color: #e50087; */
 }
 .todo-list-area .item_buttons {
   width: auto;
 }
 .todo-list-area .item_buttons i {
-  position: relative;
+  /* position: relative; */
   top: 2px;
 }
 .todo-list-area .item_buttons > button {
   text-align: center;
   width: 35px;
   height: 35px;
-  color: #daab00;
+  color: #fe4010;
   font-size: 17px;
-  border-radius: 8px;
+  border-radius: 5px;
+  border-width: 0;
+  margin-right: 20px;
 }
-.todo-list-area .item_buttons > button:first-child {
+/* .todo-list-area .item_buttons > button:first-child {
   background-color: #fdf3ce;
   margin-right: 8px;
-}
+} */
+
 .todo-list-area .edit_buttons {
   display: none;
 }
+
 .todo-list-area .todo_form {
-  position: absolute;
-  bottom: 40px;
+  /* position: absolute; */
+
   display: flex;
-  justify-content: space-between;
-  max-width: 500px;
+  justify-content: flex-start;
+  
+  max-width: 450px;
   width: 80%;
   min-width: 100px;
   margin-top: 12px;
 }
+
+/* To Do Text Input */
 .todo-list-area .todo_form .todo_input {
   width: 100%;
   font-size: 16px;
@@ -254,15 +145,73 @@ button > i {
   background-color: #f6f6f6;
   border-radius: 8px;
 }
+
 .todo-list-area .todo_form .todo_submit_button {
-  background-color: #0066ff;
+  background-color: #34a854;
   color: #fff;
   width: 80px;
   margin-left: 10px;
   font-size: 30px;
   border-radius: 8px;
+  border-width: 0;
 }
 .todo-list-area .todo_form .todo_submit_button i {
   position: relative;
   top: 3px;
 }
+
+/**
+ * Basic CSS Media Query Template
+ * TODO: I should probably use Sass...
+ * Credit: Michael Vieth)
+ * ------------------------------------------
+ *  Responsive Grid Media Queries - 1280, 1024, 768, 480
+ *   1280-1024   - desktop (default grid)
+ *   1024-768    - tablet landscape
+ *   768-480     - tablet 
+ *   480-less    - phone landscape & smaller
+ * --------------------------------------------
+ */
+ @media all and (min-width: 1024px) and (max-width: 1280px) { }
+
+ @media all and (min-width: 768px) and (max-width: 1024px) { }
+ 
+ @media all and (min-width: 480px) and (max-width: 768px) { }
+ 
+ @media all and (max-width: 480px) { }
+ 
+ 
+ /* Portrait */
+ @media screen and (orientation:portrait) { /* Portrait styles here */ }
+ /* Landscape */
+ @media screen and (orientation:landscape) { /* Landscape styles here */ }
+ 
+ 
+ /* CSS for iPhone, iPad, and Retina Displays */
+ 
+ /* Non-Retina */
+ @media screen and (-webkit-max-device-pixel-ratio: 1) {
+ }
+ 
+ /* Retina */
+ @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+ only screen and (-o-min-device-pixel-ratio: 3/2),
+ only screen and (min--moz-device-pixel-ratio: 1.5),
+ only screen and (min-device-pixel-ratio: 1.5) {
+ }
+ 
+ /* iPhone Portrait */
+ @media screen and (max-device-width: 480px) and (orientation:portrait) {
+ } 
+ 
+ /* iPhone Landscape */
+ @media screen and (max-device-width: 480px) and (orientation:landscape) {
+ }
+ 
+ /* iPad Portrait */
+ @media screen and (min-device-width: 481px) and (orientation:portrait) {
+ }
+ 
+ /* iPad Landscape */
+ @media screen and (min-device-width: 481px) and (orientation:landscape) {
+ }
