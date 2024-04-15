@@ -3,7 +3,7 @@
 </h2>
 
 <h3 align="center">
-  Your study items remains until every milestone is met! 🛣️🎓
+  Study items remains until every milestone is met! 🛣️🎓
 </h3>
 
 <div align="center">
