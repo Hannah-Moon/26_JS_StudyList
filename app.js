@@ -7,7 +7,7 @@ const todos = document.querySelector('.todos');
 let savedList = [];
 const getSavedList = localStorage.getItem(TO_DO_KEY);
 
-//리스트 돔 생성
+// Generate list dorm
 const createListDOM = (todoInfo) => {
   const { id, text } = todoInfo;
   const item = document.createElement('li');
@@ -25,37 +25,38 @@ const createListDOM = (todoInfo) => {
   todos.appendChild(item);
 };
 
-//리스트 저장
+// Save item in JSON
 const saveList = () => {
   localStorage.setItem(TO_DO_KEY, JSON.stringify(savedList));
 };
 
-//새로고침시 저장된 리스트 유지
+// Keep the list even with the refresh button
 if (getSavedList) {
   const parsedTodos = JSON.parse(getSavedList);
-  //새로고침하면 빈 배열이 아닌 로컬스토리지에 저장되어있는 값으로 할당
+
+  //When you refresh, it assigns the values stored in local storage instead of an empty array.
   savedList = parsedTodos;
   parsedTodos.forEach((list) => {
     createListDOM(list);
   });
 }
 
-//삭제
+//Delete
 const onDeleteList = (e) => {
   const target = e.target;
   if (e.target.className !== 'todo_remove_button') return;
   const targetList = target.closest('li');
   targetList.remove();
-  //클릭된 li의 id 값과, 로컬리스트의 아이디가 같은거 제외 리턴
-  //저장된 리스트에 다시 할당해줌
+// Return items from the stored list excluding those with IDs matching the clicked LI's ID
+// Then reassign the updated list
   savedList = savedList.filter((list) => {
     return list.id !== parseInt(targetList.dataset.id);
   });
-  //다시할당해준 값으로 로컬스토리지 업데이트해줌
+// Assuming 'storedList' is the updated list after filtering out the clicked LI's ID
   saveList();
 };
 
-//추가
+//Add new list
 const onAddList = () => {
   const todoInfo = {
     id: Date.now(),
