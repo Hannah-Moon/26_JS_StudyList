@@ -12,7 +12,7 @@
 
 
 ## Project Idea 💡
-> As I dive into the world of software engineering, I know I need a solid study plan. That's where the Study List Creator comes in. It's my go-to tool as a beginner, helping me explore everything from algorithms to design principles. Each thing I add to my list is a step forward in my learning journey. With dedication and a regular routine, I'm getting closer to reaching my goals.
+> As I dive into the world of software engineering, I know I need a solid study plan. That's where the Study List Creator comes in. It's my go-to tool as a software engineer, helping me explore modern development tools. With dedication and a regular routine, I'm getting closer to reaching my goals.
 
 ### Key Requirement
     ○ Generate new items.
