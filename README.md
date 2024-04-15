@@ -12,7 +12,7 @@
 
 
 ## Project Idea 💡
-As I dive into the world of software engineering, I know I need a solid study plan. That's where the Study List Creator comes in. It's my go-to tool as a beginner, helping me explore everything from algorithms to design principles. Each thing I add to my list is a step forward in my learning journey. With dedication and a regular routine, I'm getting closer to reaching my goals.
+> As I dive into the world of software engineering, I know I need a solid study plan. That's where the Study List Creator comes in. It's my go-to tool as a beginner, helping me explore everything from algorithms to design principles. Each thing I add to my list is a step forward in my learning journey. With dedication and a regular routine, I'm getting closer to reaching my goals.
 
 ### Key Requirement
     ○ Generate new items.
@@ -26,19 +26,19 @@ As I dive into the world of software engineering, I know I need a solid study pl
 ---
 ## Live Demo 🖥️
 
-> **Please click this link** :  https://hannah-moon.github.io/24_SBA_308A_JavaScript-Web-Application/<br>
+> **Please click this link** :  https://hannah-moon.github.io/26_JS_StudyList/<br>
 
 ---
 ## Tools 🛠️
 
 ### Environment
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white)
-![Github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)             
+> ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white)
+> ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white)
+> ![Github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)             
 
 ### Development
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=Bootstrap&logoColor=white)
+> ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white)
+> ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+> ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+> ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=Bootstrap&logoColor=white)
 
